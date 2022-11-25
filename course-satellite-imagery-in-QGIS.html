@@ -1,0 +1,18 @@
+---
+layout: default
+id: Sat101
+title: Satellite Imagery in QGIS
+---
+
+<div>
+  {%- for item in site.data.courses -%}
+    {%- if item[1].id == page.id -%}
+      {%- include course-teaser.html -%}
+      {%- include course-about.html -%}
+      {%- include course-details.html -%}
+      {%- include course-attend.html -%}
+      {%- include course-presenters.html -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+</div>

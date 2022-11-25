@@ -1,0 +1,31 @@
+id: 
+title: 
+pageURL: 
+location: 
+headerImage:
+headerImageAltText:
+registrationLink: 
+workshopLength:
+shortDescription : 
+    <p>Lorem ipsum</p>
+    <p>Lorem ipsum</p>
+details: 
+  text:
+  dotPoints:
+    - 
+    -
+    - 
+    - 
+    - 
+secondImage:
+secondImageAltText: 
+whoShouldAttend: 
+presenters:
+  - name: 
+    company:
+    logo: 
+    headshot: 
+  - name: 
+    company: 
+    logo: 
+    headshot: 

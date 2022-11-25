@@ -1,0 +1,9 @@
+{%- assign course = item[1] -%}
+
+<div class="container">
+  <h2>Presenters</h2>
+  {%- for presenter in course.presenters -%}
+    {{ presenter.name }}
+    <img src="{{ site.baseurl }}/assets/images/headshots/{{presenter.headshot}}" alt="{{ presenter.name }}"/>
+  {%- endfor -%}
+</div>

@@ -1,0 +1,12 @@
+{%- assign courses = site.data.courses | sort -%}
+<a class="menu-item-home" href="{{ site.baseurl }}/">
+  Home
+</a>
+<h2>Courses</h2>
+{% for course in courses %}
+<div class="menu-item">
+  <a href="{{ site.baseurl }}/{{ course[1].pageURL}}">
+    {{ course[1].title }}
+  </a>
+</div>
+  {% endfor %}

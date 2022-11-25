@@ -1,0 +1,29 @@
+
+<header>
+  <div class="container inner-header">
+    <div>
+      <a href="{{ site.baseurl }}/">
+        {%- include graphics/logo.svg -%}
+        <div class="sr-only">Q4MEx</div>
+      </a>
+    </div>
+    <div>
+      <div id="nav_icon" onclick="showMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="nav_overlay">
+        <div class="nav_icon_inner">
+          <div id="nav_icon" class="active" onclick="showMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+          {% include navigation.html %}
+
+      </div>
+    </div>
+  </div>
+</header>

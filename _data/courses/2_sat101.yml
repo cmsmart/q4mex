@@ -1,0 +1,24 @@
+id: Sat101
+title: Satellite Imagery in QGIS
+location: Perth, Australia
+headerImage: introToDrones_header.jpg
+registrationLink: https://ti.to/mammoth-geospatial/q4mex-sat-imagery-in-qgis-20221212
+workshopLength: "&#189; day"
+shortDescription: 
+    <p>Lorem ipsum</p>
+    <p>Lorem ipsum</p>
+details: 
+  text: "This hands-on workshop is designed for new and experienced users of GIS. We'll cover topics including:"
+  dotPoints:
+    - key features of QGIS
+    - sources of free geoscience data, satellite imagery, and templates
+    - importing, exporting, editing, and analysing geospatial data
+    - creating professional-looking maps
+    - geology-specific workflows and tools
+secondImage: introToQGIS_2.jpg
+whoShouldAttend: "Geologists, geoscientists, field staff, GIS professionals, exploration managers, geoscientific information managers and others will learn about QGIS and how they can use it in their mining & exploration workflow."
+presenters:
+  - name: John Bryant
+  - company: Mammoth Geospatial
+  - logo: mammoth_logo.svg
+  - headshot: john.jpg

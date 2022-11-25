@@ -1,0 +1,49 @@
+{%- assign course = item[1] -%}
+{%- assign todays_date = 'now' | date: '%s' -%}
+{%- assign thisCourse = site.data.course_dates[course.id] -%}
+{%- assign current = thisCourse[0].date | date: '%s' -%}
+{%- assign soldOut = thisCourse[0].soldOut -%}
+
+<section class="course-teaser">
+  <div class="container">
+    <div class="grid grid-img-right">
+      <div class="grid-left">
+        <div>
+          {%- if current >= todays_date -%}
+            <div class="course-teaser-date">{{ thisCourse[0].date }}</div>
+          {%- endif -%}
+  
+          <h2 class="course-teaser-title">{{ course.title }}</h2>
+          <div class="course-teaser-length">{{ course.workshopLength | html }} workshop</div>
+          <div class="course-teaser-location">{{ course.location }}</div>
+        </div>
+        {%- if current > todays_date and soldOut == true -%}
+           <div class="sold-out-text">Sold out</div>
+        {%- endif -%}
+        <div class="course-register">
+          <div>
+            {%- if current > todays_date and soldOut == true -%}
+              <a class="button" href="mailto:training@mammothgeospatial.com">Join wait list</a>
+            {%- elsif current < todays_date or current == "" or current == null -%}
+              <a class="button" href="mailto:training@mammothgeospatial.com">Register interest</a>
+            {%- else -%}
+              <a class="button" target="_blank" href="{{ course.registrationLink }}">Register</a>
+            {%- endif -%}
+          </div>
+          <div>
+            <a class="button" href="{{ site.baseurl }}/{{ course.pageURL }}">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="grid-right">
+        <div class="img-group img-group-right">
+          <img class="img" src="{{ site.baseurl }}/assets/images/courseImages/{{ course.headerImage }}" alt="{{ course.headerImageAltText }}"/>
+          <div class="dots">{%- include graphics/dots_right.svg -%}</div>
+          {%- if current > todays_date and soldOut == true -%}
+            <div class="sold-out-banner">Sold out</div>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

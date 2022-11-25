@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.description }}">
+    <link preload as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+
+    
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> 
+
+    <!-- favicons -->
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+
+    <!-- analytics -->
+    {%- if jekyll.environment == "production" -%}
+    <!-- add analytics script here -->
+    {%- endif -%}
+    
+  </head>
+  <body id="{{page.id}}">
+    {%- include header.html -%}
+    <div>
+        {{ content }}
+    </div>
+    {%- include footer.html -%}
+
+    <script>
+      function showMenu() {
+        var nav = document.getElementById('nav_overlay')
+        if (nav.className === "active") 
+          nav.classList.remove("active")
+        else
+          nav.classList.add("active")
+    
+        var menu = document.getElementById('nav_icon')
+        if (menu.className === "active") 
+          menu.classList.remove("active")
+        else
+          menu.classList.add("active")
+      }
+    </script>
+
+  </body>
+</html>
+
