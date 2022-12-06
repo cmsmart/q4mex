@@ -1,5 +1,4 @@
 title: Q4MEx
 description: >- # this means to ignore newlines until "baseurl:"
-url: https://cmsmart.github.io
-domain: cmsmart.github.io
-baseurl: "/q4mex"
+url: cmsmart.github.io
+baseurl: /q4mex
