@@ -104,6 +104,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
   }
   #nav_overlay {
     position: fixed;
@@ -213,7 +214,6 @@ header {
   grid-template-columns: auto 500px;
   max-width: 1200px;
   margin: 0 auto;
-  // padding: 40px 0;
   gap: 20px;
 }
 
@@ -401,15 +401,9 @@ footer {
       }
       .presenter-id {
         text-align: center;
-        // display: flex;
       }
     }
   }
-}
-
-@media (max-width: 992px) {
-
-
 }
 
 @media (max-width: 768px) {
@@ -451,7 +445,6 @@ footer {
   }
   #presenters .presenter-group {
     display: block;
-
   }
   #qgis {
     padding-top: 10px;
