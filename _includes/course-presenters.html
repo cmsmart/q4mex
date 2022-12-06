@@ -1,9 +1,27 @@
 {%- assign course = item[1] -%}
 
-<div class="container">
-  <h2>Presenters</h2>
-  {%- for presenter in course.presenters -%}
-    {{ presenter.name }}
-    <img src="{{ site.baseurl }}/assets/images/headshots/{{presenter.headshot}}" alt="{{ presenter.name }}"/>
-  {%- endfor -%}
+<div id="presenters" class="container">
+  <div class="inner">
+    <h2>Presenters</h2>
+    <div class="presenter-group">
+      {%- for person in course.presenters -%}
+      {%- assign presenter = site.data.presenters[person] -%}
+      <div class="presenter-card">
+        <div class="presenter-company">
+          <a href="{{presenter.website}}" target="_blank">
+            <img src="{{ site.baseurl }}/assets/images/logos/{{presenter.logo}}" alt="{{ presenter.company }}"/>
+          </a>
+        </div>
+        <div class="presenter-id">
+          <div>
+            <div class="presenter-img">
+              <img src="{{ site.baseurl }}/assets/images/headshots/{{presenter.headshot}}" alt="{{ presenter.name }}"/>
+            </div>
+            <div class="presenter-name">{{ presenter.name }}</div>
+          </div>
+        </div>
+      </div>
+      {%- endfor -%}
+    </div>
+  </div>
 </div>

@@ -21,11 +21,6 @@ secondImage: introToQGIS_2.jpg
 secondImageAltText: 
 whoShouldAttend: "Geologists, geoscientists, field staff, GIS professionals, exploration managers, geoscientific information managers and others will learn about QGIS and how they can use it in their mining & exploration workflow."
 presenters:
-  - name: John Bryant
-    company: Mammoth Geospatial
-    logo: mammoth_logo.svg
-    headshot: john.png
-  - name: Vincent
-    company: Mammoth Geospatial
-    logo: gis_pro.svg
-    headshot: vincent.png
+  - john
+  - vincent
+  - grant

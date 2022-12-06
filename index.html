@@ -1,10 +1,15 @@
 ---
 layout: default
+id: home
 title: Q4MEx
+description: QGIS training for the Mining and Exploration industry
+
 ---
 <div class="home-hero">
-  <div class="container">
-    <h1>QGIS training for the <br>Mining and Exploration industry</h1>
+  <div class="container grid">
+    <h1>QGIS training for the <br>Mining & Exploration industry</h1>
+    <img src="{{site.baseurl}}/assets/images/qgis_shine.png" alt="People attending a workshop"/>
+
   </div>
 </div>
 
@@ -15,33 +20,59 @@ title: Q4MEx
 {%- endfor -%}
 
 
-<div class="container">
-  <h2>About Q4MEx</h2>
-  <div>
-    <p>A consortium of QGIS experts Mammoth Geospatial, GISPro and Grant Boxer</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed nulla sed ex hendrerit eleifend. Duis ac justo fermentum, volutpat orci sed, bibendum eros. Cras feugiat, felis ac dapibus volutpat, quam mi sollicitudin nisi, et vulputate mauris nunc quis est. Nullam eu libero lorem. Aenean dictum sit amet odio in iaculis. Donec ornare sollicitudin congue. Nunc lobortis egestas velit, vitae tempus diam tempor quis. Quisque molestie pretium pulvinar.
-    </p>
-    <p>Donec vehicula dictum orci, sed consequat felis blandit at. Morbi facilisis vehicula arcu, eget congue augue ornare at. Donec at lacus venenatis, hendrerit nulla vel, eleifend ex. In sed libero ante. Donec bibendum varius magna, eget pharetra magna.
-    </p>
+<section id="qgis">
+  <div class="container">
+    <div class="grid q-grid">
+      <div class="grid-left">
+        <div class="q-title">What is</div>
+        <div class="q-box">
+          <div>{%- include graphics/logos/qgis_logo.svg -%}</div>
+        </div>
+      </div>
+      <div class="grid-right">
+        <div>
+          <p>
+            QGIS is a free and open source GIS that runs on all major operating systems. It's available in about 40 languages and used worldwide by a large and growing user community. New features are added at a dizzying pace by a talented global team of developers.
+          </p>
+          <p>
+            QGIS is professional grade and can do the majority of data import, data display, analysis and map production required by today's geoscientists. A wide variety of free geological symbols and patterns are available for mapping, and a growing number of plugins are available to support your geoscience workflow.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</section>
+
+
+<section id="about">
+  <div class="container">
+    <div class="inner">
+      <div class="grid">
+        <div class="about-text">        
+          <h2>About Q4MEx</h2>
+          <p>A consortium of QGIS experts Mammoth Geospatial, GIS Pro and Grant Boxer</p>
+          <p>
+            Looking for some words like course, workshop, training, series in this section for SEO.
+          </p>
+        </div>
+        <div class="about-img">
+          <img src="{{site.baseurl}}/assets/images/logos/consortium.png" alt="Mammoth Geospatial, GIS Pro, Grant Boxer"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <div class="container">
-  <h2>About QGIS</h2>
-  <div>
-    <p>QGIS is a free and open source GIS that runs on all major operating systems. It's available in about 40 languages and used worldwide by a large and growing user community. New features are added at a dizzying pace by a talented global team of developers.</p>
-    <p>QGIS is professional grade and can do the majority of data import, data display, analysis and map production required by today's geoscientists. A wide variety of free geological symbols and patterns are available for mapping, and a growing number of plugins are available to support your geoscience workflow.
-    </p>
-  </div>
-</div>
-
-<div class="container">
-  <h3>Certification</h3>
-  <div>
-    <p>A consortium of QGIS experts Mammoth Geospatial, GISPro and Grant Boxer</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed nulla sed ex hendrerit eleifend. Duis ac justo fermentum, volutpat orci sed, bibendum eros. Cras feugiat, felis ac dapibus volutpat, quam mi sollicitudin nisi, et vulputate mauris nunc quis est. Nullam eu libero lorem. Aenean dictum sit amet odio in iaculis. Donec ornare sollicitudin congue. Nunc lobortis egestas velit, vitae tempus diam tempor quis. Quisque molestie pretium pulvinar.
-    </p>
-    <p>Donec vehicula dictum orci, sed consequat felis blandit at. Morbi facilisis vehicula arcu, eget congue augue ornare at. Donec at lacus venenatis, hendrerit nulla vel, eleifend ex. In sed libero ante. Donec bibendum varius magna, eget pharetra magna.
-    </p>
+  <div class="inner">
+    <h3>Certification</h3>
+    <div>
+      <p>
+        <a href="https://mammothgeospatial.com" target="_blank">Mammoth Geospatial</a> is an official QGIS Certifying Organisation.
+      </p>
+      <p>
+        Successful participants in our workshops will receive an official QGIS certificate. The certificate program provides a mechanism to financially support the QGIS project.
+      </p>
+    </div>
   </div>
 </div>

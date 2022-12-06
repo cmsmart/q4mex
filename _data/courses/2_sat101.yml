@@ -1,9 +1,11 @@
 id: Sat101
 title: Satellite Imagery in QGIS
+pageURL: course-satellite-imagery-in-QGIS
 location: Perth, Australia
 headerImage: introToDrones_header.jpg
+headerImageAltText: People attending a workshop
 registrationLink: https://ti.to/mammoth-geospatial/q4mex-sat-imagery-in-qgis-20221212
-workshopLength: "&#189; day"
+workshopLength: "&#189; day" #html code for 1/2
 shortDescription: 
     <p>Lorem ipsum</p>
     <p>Lorem ipsum</p>
@@ -16,9 +18,7 @@ details:
     - creating professional-looking maps
     - geology-specific workflows and tools
 secondImage: introToQGIS_2.jpg
+secondImageAltText: 
 whoShouldAttend: "Geologists, geoscientists, field staff, GIS professionals, exploration managers, geoscientific information managers and others will learn about QGIS and how they can use it in their mining & exploration workflow."
 presenters:
-  - name: John Bryant
-  - company: Mammoth Geospatial
-  - logo: mammoth_logo.svg
-  - headshot: john.jpg
+  - john

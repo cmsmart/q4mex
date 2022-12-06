@@ -30,9 +30,11 @@
               <a class="button" target="_blank" href="{{ course.registrationLink }}">Register</a>
             {%- endif -%}
           </div>
+          {% if page.id == 'home' %}
           <div>
             <a class="button" href="{{ site.baseurl }}/{{ course.pageURL }}">Learn more</a>
           </div>
+          {% endif %}
         </div>
       </div>
       <div class="grid-right">

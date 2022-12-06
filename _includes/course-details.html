@@ -1,22 +1,23 @@
 {%- assign course = item[1] -%}
 
 <div class="container">
-  <div class="grid grid-img-left">
-    <div class="grid-left">
-      <div class="img-group img-group-left">
-        <img class="img" src="{{ site.baseurl }}/assets/images/courseImages/{{ course.secondImage }}" alt="{{ course.secondImageAltText }}"/>
-        <div class="dots">{%- include graphics/dots_left.svg -%}</div>
+  <div class="inner">
+    <div class="grid grid-img-left">
+      <div class="grid-left">
+        <div class="img-group img-group-left">
+          <img class="img" src="{{ site.baseurl }}/assets/images/courseImages/{{ course.secondImage }}" alt="{{ course.secondImageAltText }}"/>
+          <div class="dots">{%- include graphics/dots_left.svg -%}</div>
+        </div>
+      </div>
+      <div class="grid-right">
+        <h2>The workshop</h2>
+        <div>{{ course.details.text }}</div>
+        <ul>
+          {%- for point in course.details.dotPoints -%}
+            <li>{{ point }}</li>
+          {%- endfor -%}
+        </ul>
       </div>
     </div>
-    <div class="grid-right">
-      <h2>The workshop</h2>
-      <div>{{ course.details.text }}</div>
-      <ul>
-        {%- for point in course.details.dotPoints -%}
-          <li>{{ point }}</li>
-        {%- endfor -%}
-      </ul>
-    </div>
-
-  </div>
+  </div>  
 </div>

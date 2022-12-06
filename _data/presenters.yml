@@ -1,0 +1,18 @@
+john:
+  name: John Bryant
+  company: Mammoth Geospatial
+  website: https://mammothgeospatial.com
+  logo: mammoth_logo.png
+  headshot: john.png
+vincent:
+  name: Vincent Dinh
+  company: GIS Pro
+  website: https://gispro.com.au
+  logo: gispro_logo.png
+  headshot: vincent.png
+grant:
+  name: Grant Boxer
+  company: 
+  website: https://grantboxer.github.io
+  logo: grant_logo.png
+  headshot: placeholder.png
