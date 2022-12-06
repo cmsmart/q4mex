@@ -1,2 +1,3 @@
-title: 'Q4MEx'
+title: Q4MEx
+description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "q4mex"
